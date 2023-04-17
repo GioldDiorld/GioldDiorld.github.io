@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>some notes | GD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="gcc什么都不输入，就是在编译成exe -o后面的参数是输出文件名字 -c后面的参数是编译成.obj而非可执行文件.exe makefilemakefile中全部是在命令行中执行的指令，类似于bat 123456all:	gcc 1.c 2.c -o 1.pig	gcc 1.c 2.c -o 1.execlean:	rm *.pig	rm *.exe  make后面跟的是参数，会执行参数后的所有指">
+<meta property="og:type" content="article">
+<meta property="og:title" content="some notes">
+<meta property="og:url" content="http://example.com/2023/04/14/note/index.html">
+<meta property="og:site_name" content="GD">
+<meta property="og:description" content="gcc什么都不输入，就是在编译成exe -o后面的参数是输出文件名字 -c后面的参数是编译成.obj而非可执行文件.exe makefilemakefile中全部是在命令行中执行的指令，类似于bat 123456all:	gcc 1.c 2.c -o 1.pig	gcc 1.c 2.c -o 1.execlean:	rm *.pig	rm *.exe  make后面跟的是参数，会执行参数后的所有指">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-14T10:51:17.401Z">
+<meta property="article:modified_time" content="2023-04-17T09:47:28.625Z">
+<meta property="article:author" content="GD">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="GD" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">GD</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-note" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2023/04/14/note/" class="article-date">
+  <time datetime="2023-04-14T10:51:17.401Z" itemprop="datePublished">2023-04-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      some notes
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h1><p>什么都不输入，就是在编译成exe</p>
+<p>-o后面的参数是输出文件名字</p>
+<p>-c后面的参数是编译成.obj而非可执行文件.exe</p>
+<h1 id="makefile"><a href="#makefile" class="headerlink" title="makefile"></a>makefile</h1><p>makefile中全部是在命令行中执行的指令，类似于bat</p>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">all:</span></span><br><span class="line">	gcc 1.c 2.c -o 1.pig</span><br><span class="line">	gcc 1.c 2.c -o 1.exe</span><br><span class="line"><span class="section">clean:</span></span><br><span class="line">	rm *.pig</span><br><span class="line">	rm *.exe</span><br></pre></td></tr></table></figure>
+
+<p>make后面跟的是参数，会执行参数后的所有指令，如果无参数默认执行第一个参数的所有指令</p>
+<h1 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h1><h1 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h1><p>其实在Git Bash命令行里，默认选中文字松开鼠标就会自动把选中内容复制到剪贴板，默认鼠标中键是粘贴</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">删除无用的提交，只保留最后一个</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Clone your git repo</span></span><br><span class="line">git clone https://github.com/lestatzhang/lestatzhang.github.io.git;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Entre your <span class="built_in">local</span> repo</span></span><br><span class="line">cd lestatzhang.github.io;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Checkout 无父分支</span></span><br><span class="line">git checkout --orphan latest_branch;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Add all the files</span></span><br><span class="line">git add -A;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Commit the changes</span></span><br><span class="line">git commit -am &quot;Reinitialize&quot;;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Delete the branch</span></span><br><span class="line">git branch -D master;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Rename the current branch to master</span></span><br><span class="line">git branch -m master;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Finally, force update your repository</span></span><br><span class="line">git push -f origin master;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="照片大小不超过2m"><a href="#照片大小不超过2m" class="headerlink" title="照片大小不超过2m"></a>照片大小不超过2m</h1><p>ps转成jpeg</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/04/14/note/" data-id="clgknr28f000118vw2yz55lkn" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/04/17/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">四月 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/04/17/blog/">blog</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/17/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/14/note/">some notes</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 GD<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
