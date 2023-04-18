@@ -70,6 +70,10 @@
   <time datetime="2023-04-17T09:28:49.000Z" itemprop="datePublished">2023-04-17</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/blogcr/">blogcr</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -120,6 +124,24 @@
 <p>最后变成d了，原来的s表示服务起在本地，现在的d表示部署在远端</p>
 <h2 id="hexo文章更新"><a href="#hexo文章更新" class="headerlink" title="hexo文章更新"></a>hexo文章更新</h2><p>github需要时间来重新编译，不要着急。</p>
 <h3 id="hexo删除文章"><a href="#hexo删除文章" class="headerlink" title="hexo删除文章"></a>hexo删除文章</h3><p>直接在文件夹下删除。</p>
+<h2 id="hexo文章分类与标签"><a href="#hexo文章分类与标签" class="headerlink" title="hexo文章分类与标签"></a>hexo文章分类与标签</h2><p>打开命令行，进入博客所在文件夹。执行命令</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> page categories</span><br></pre></td></tr></table></figure>
+
+<p>成功后会提示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Created: ~/Documents/blog/source/categories/index.md</span><br></pre></td></tr></table></figure>
+
+<p>根据上面的路径，找到<code>index.md</code>这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: <span class="number">2017</span>-<span class="number">05</span>-<span class="number">27</span> <span class="number">13</span>:<span class="number">47</span>:<span class="number">40</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>添加<code>type: &quot;categories&quot;</code>到内容中，添加后是这样的：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line"><span class="built_in">date</span>: 2017-05-27 13:47:40</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;categories&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>保存并关闭文件。</p>
+<p>打开需要添加分类的文章，为其添加categories属性。下方的<code>categories: web前端</code>表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: jQuery对表单的操作及更多应用</span><br><span class="line">date: <span class="number">2017</span>-<span class="number">05</span>-<span class="number">26</span> <span class="number">12</span>:<span class="number">12</span>:<span class="number">57</span></span><br><span class="line">categories: </span><br><span class="line">- web前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了<code>categories: xxx</code>的文章才会被收录到首页的“分类”中。</p>
+<p>tags完全同理</p>
 
       
     </div>
@@ -239,6 +261,13 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blogcr/">blogcr</a></li></ul>
+    </div>
+  </div>
+
 
   
     
