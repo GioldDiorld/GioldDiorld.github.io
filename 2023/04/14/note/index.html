@@ -15,7 +15,7 @@
 <meta property="og:description" content="gcc什么都不输入，就是在编译成exe -o后面的参数是输出文件名字 -c后面的参数是编译成.obj而非可执行文件.exe makefilemakefile中全部是在命令行中执行的指令，类似于bat 123456all:	gcc 1.c 2.c -o 1.pig	gcc 1.c 2.c -o 1.execlean:	rm *.pig	rm *.exe  make后面跟的是参数，会执行参数后的所有指">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-04-14T10:51:17.401Z">
-<meta property="article:modified_time" content="2023-04-17T09:47:28.625Z">
+<meta property="article:modified_time" content="2023-04-18T11:05:10.373Z">
 <meta property="article:author" content="GioldDiorld">
 <meta property="article:tag" content="write sth on keywords">
 <meta name="twitter:card" content="summary">
@@ -87,19 +87,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h1><p>什么都不输入，就是在编译成exe</p>
+        <h2 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h2><p>什么都不输入，就是在编译成exe</p>
 <p>-o后面的参数是输出文件名字</p>
 <p>-c后面的参数是编译成.obj而非可执行文件.exe</p>
-<h1 id="makefile"><a href="#makefile" class="headerlink" title="makefile"></a>makefile</h1><p>makefile中全部是在命令行中执行的指令，类似于bat</p>
+<h2 id="makefile"><a href="#makefile" class="headerlink" title="makefile"></a>makefile</h2><p>makefile中全部是在命令行中执行的指令，类似于bat</p>
 <figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">all:</span></span><br><span class="line">	gcc 1.c 2.c -o 1.pig</span><br><span class="line">	gcc 1.c 2.c -o 1.exe</span><br><span class="line"><span class="section">clean:</span></span><br><span class="line">	rm *.pig</span><br><span class="line">	rm *.exe</span><br></pre></td></tr></table></figure>
 
 <p>make后面跟的是参数，会执行参数后的所有指令，如果无参数默认执行第一个参数的所有指令</p>
-<h1 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h1><h1 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h1><p>其实在Git Bash命令行里，默认选中文字松开鼠标就会自动把选中内容复制到剪贴板，默认鼠标中键是粘贴</p>
+<h2 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h2><h2 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h2><p>其实在Git Bash命令行里，默认选中文字松开鼠标就会自动把选中内容复制到剪贴板，默认鼠标中键是粘贴</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">删除无用的提交，只保留最后一个</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Clone your git repo</span></span><br><span class="line">git clone https://github.com/lestatzhang/lestatzhang.github.io.git;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Entre your <span class="built_in">local</span> repo</span></span><br><span class="line">cd lestatzhang.github.io;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Checkout 无父分支</span></span><br><span class="line">git checkout --orphan latest_branch;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Add all the files</span></span><br><span class="line">git add -A;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Commit the changes</span></span><br><span class="line">git commit -am &quot;Reinitialize&quot;;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Delete the branch</span></span><br><span class="line">git branch -D master;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Rename the current branch to master</span></span><br><span class="line">git branch -m master;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Finally, force update your repository</span></span><br><span class="line">git push -f origin master;</span><br></pre></td></tr></table></figure>
 
 
 
-<h1 id="照片大小不超过2m"><a href="#照片大小不超过2m" class="headerlink" title="照片大小不超过2m"></a>照片大小不超过2m</h1><p>ps转成jpeg</p>
+<h2 id="照片大小不超过2m"><a href="#照片大小不超过2m" class="headerlink" title="照片大小不超过2m"></a>照片大小不超过2m</h2><p>ps转成jpeg</p>
+<h2 id="pagination"><a href="#pagination" class="headerlink" title="pagination"></a>pagination</h2><p>分页，就是一种美观简洁的链接，如下一章</p>
 
       
     </div>
@@ -136,7 +137,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/create-my-own-blog/">create my own blog</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/create-my-own-blog/">create_my_own_blog</a></li></ul>
     </div>
   </div>
 
